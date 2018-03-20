@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Portofolio - Mis Projectos </title>
+		<meta charset="utf-8"> 
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> 										<!-- Aqui permitimos el uso de acentos -->
+		<link rel="stylesheet" type="text/css" href="styles/Projectos.css">  <!-- Hoja de estilos utilizada -->
+	</head>
+	<body>
+    <header>
+	  </header>
+		<!-- Menu de navegacion -->
+		<nav>
+			<ul id="Menu">				
+				<li> <a href="Introduccion.html">¿Quien soy?</a></li>
+				<li> <a href="Projectos.html">Mis Projectos</a></li>				
+				<li> <a href="Social.html">Contacto</a></li>
+				<li> <a href="Formulario.html">¡Pregúntame!</a></li>
+			</ul>
+		</nav>
+      <main>
+      <div id="contenedorGaleria">
+	 
+      <!-- Container de la Galeria de Imagenes y Videos -->
+       <div class="Slideshow">
+
+      <!-- Full-width de imagenes con texto descriptivo -->
+        <div class="mySlides">
+         <div class="numbertext">1 / 6</div>
+          <img src="images/Projectos/Render_Material.jpg" alt="render_Material" style="width:100%">
+        </div>
+
+         <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+           <img src="images/Projectos/Render_Casco.jpg" alt="Render_Casco" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+           <img src="images/Projectos/Modelado_Casa.jpg" alt="Modelado_Casa" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+           <img src="images/Projectos/Modelado_Avro.jpg" alt="Modelado_Avro" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <video controls loop>
+           <source src="videos/Jim_Carrera.mp4" type="video/mp4" style="width:100%">
+           
+          </video>
+         </div>
+
+         <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <video controls loop>
+           <source src="videos/Jim_Humano.mp4"  type="video/mp4" style="width:100%">
+       
+          </video>
+         </div>
+
+  <!-- Next and previous buttons -->
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+        <div class="caption-container">
+         <p id="caption"></p>
+        </div>
+
+<!-- Thumbnail images -->
+        <div class="row">
+         <div class="column">
+          <img class="demo cursor" src="images/Projectos/Render_Material.jpg" style="width:100%" onclick="currentSlide(1)" alt="Render final, Material Escolar (Acabados 2018).">
+         </div>
+         <div class="column"> 
+          <img class="demo cursor" src="images/Projectos/Render_Casco.jpg" style="width:100%" onclick="currentSlide(2)" alt="Render final, Casco Medieval Desgastado (Acabados 2018).">
+         </div>
+         <div class="column">
+          <img class="demo cursor" src="images/Projectos/Modelado_Casa.jpg" style="width:100%" onclick="currentSlide(3)" alt="Modelado sin suavizar, Casa de campo (Modelado 2018). ">
+         </div>
+         <div class="column">
+          <img class="demo cursor" src="images/Projectos/Modelado_Avro.jpg" style="width:100%" onclick="currentSlide(4)" alt="Modelado suavizado, Avro 504k (Modelado 2018)">
+         </div>
+         <div class="column">
+          <img class="demo cursor" src="images/Projectos/Jim_Carrera.jpg" style="width:100%" onclick="currentSlide(5)" alt="Animación de Modelo Jim, La carrera (Animación 2018)">
+         </div> 
+         <div class="column">
+          <img class="demo cursor" src="images/Projectos/Jim_Humano.jpg" style="width:100%" onclick="currentSlide(6)" alt="Animación de Modelo Jim, Yo soy un ser humano (Animación 2018)">
+         </div>
+        </div>
+       </div>
+      </div>
+    <script>
+     var slideIndex = 1;
+     showSlides(slideIndex);
+
+// Next/previous controls
+     function plusSlides(n) {
+     showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+     function currentSlide(n) {
+     showSlides(slideIndex = n);
+}
+
+     function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("demo");
+     var captionText = document.getElementById("caption");
+     if (n > slides.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+    </main>
+      <footer>
+      <!-- **barra social** -->
+      <ul id="navlist">
+      <li id="name">Luis Antonio Núñez López</li>
+      <li id="qualities">3DRenderer/Modeler/Animator</li>
+      <li id="home" ><a href="https://twitter.com/RealNtsgamer"><i class="fab fa-twitter-square"></i></a></li>
+      <li id="prev" ><a href="https://www.facebook.com/luiselspanish"><i class="fab fa-facebook"></i></a></li>
+      <li id="next" ><a href="https://www.linkedin.com/in/luis-antonio-nunez-lopez/"><i class="fab fa-linkedin"></i></a></li>
+      <li id="copyright"><p>© 2018 All rights reserved.</p></li>
+      </ul>
+	  </footer>
+	</body>
+</html>

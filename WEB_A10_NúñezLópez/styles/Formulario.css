@@ -1,0 +1,303 @@
+
+/** AJUSTES GENERALES **/
+
+
+/*Definimos la fuente del nav*/
+@font-face{
+	font-family: fontNav;
+	src: url(../fonts/Kalam-Regular.ttf);
+}
+
+/*Ajustes Generales*/
+html{
+	width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Ajustes Generales*/
+body{
+	background-image: url("../images/Intro/HomeBG.jpg");
+
+	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/** BARRA DE NAVEGACION **/
+
+
+/*CSS seccion del navegador*/
+nav{
+	width: 100%;
+  height: 8%;
+  margin: 0%;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  /*Fondo con degradado*/
+  font-family: fontNav;
+  background-image: url("../images/Intro/HomeBG3.jpg");
+}
+
+/*Ajustes links*/
+#Menu a{
+	text-decoration: none;
+	color: white;
+	opacity: .6;
+  font-size: 25px;
+}
+
+	/*links on hover*/
+#Menu a:hover{
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+	font-size: 30px;
+	}
+
+/*CSS del ul dentro de la barra de navegacion*/
+#Menu{
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  width: 40%;
+
+	/*Quitamos los estilos*/
+	list-style-type: none;
+
+	font-size: 30px;
+	color: white;
+	font-family: fontNav;
+}
+
+/*Sección general*/
+#contenedorFormulario{
+  z-index:1;
+  position:relative;
+  overflow: hidden;
+  width: 100%;
+  height: 900px;
+  display: block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color:red;
+}
+
+
+#Preguntame{
+  position:relative;
+  z-index:2;
+  background-image: url("../images/Intro/HomeBG2.jpg");
+  text-align: center;
+  font-family: fontNav;
+  font-size: 50px;
+  margin-left:20%;
+  width:60%; 
+  height:15%;
+  border: 3px solid #8c8c8c;
+  margin-top:5%;
+  color:white;
+  padding: 2px 20px 20px 20px;
+  border-radius: 6px;
+}
+
+#pregunta{
+  margin-top:1.9%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  max-height: 20%;
+  background-color:#e6e6e6;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color:#8c8c8c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #00ace6;
+}
+
+.formulario {
+  border-radius: 5px;
+  background-color: #8c8c8c;
+  padding: 20px;
+  width:60%;
+  margin-top:3%;
+  margin-left:20%;
+  background-image: url("../images/Intro/HomeBG2.jpg");
+  color: white;
+  font-size: 25px;
+  font-family: fontNav;
+  border: 3px solid #00ace6;
+  -webkit-box-shadow: 15px 0px 150px 3px rgba(0,172,230,0.65);
+  -moz-box-shadow: 15px 0px 150px 3px rgba(0,172,230,0.65);
+  box-shadow: 15px 0px 150px 3px rgba(0,172,230,0.65);
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+    }
+}
+
+
+
+/** FOOTER **/
+
+footer{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    display: flex;
+  
+    /*Background con degradado*/
+   
+    background-image: url("../images/Intro/HomeBG3.jpg");
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    opacity: .6;
+}
+
+footer a:hover{
+        text-decoration: none;
+        color: white;
+        opacity: 1;
+        font-size: 60px;
+}
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    background-repeat:no-repeat;
+}
+
+#navlist li, #navlist a {
+    height: 25%;
+    width:800%;
+    display:inline;
+    margin-top: 30%;
+}
+
+#name{
+   
+   font-family: fontNav;
+   left: 250%;
+   right:0%;
+   font-size: 25px;
+   top:5%;
+   display: flex;
+}
+
+#qualities{
+   
+   font-family: fontNav;
+   left: 1150%;
+   right:0%;
+   font-size: 25px;
+   top:5%;
+   display: flex;
+}
+#home {
+    right: 0%;
+    left: 2230%;
+    font-size: 50px;
+    margin-top:0%;
+    color:white;
+}
+
+#prev {
+    right: 0%;
+    left: 2500%;
+    font-size: 50px;
+    margin-top:0%;
+    color:white;
+}
+
+#next {
+    left: 2750%;
+    right: 0%;
+    font-size: 50px;
+    margin-top:0%;
+    color:white;
+}
+
+#copyright{
+   font-family: fontNav;
+   color:white;
+   left: 3800%;
+   right:0%;
+   font-size: 25px;
+   top:-30%;
+   display: flex;
+   
+}
+
+
+
