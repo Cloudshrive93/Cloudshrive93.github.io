@@ -1,0 +1,297 @@
+
+/** AJUSTES GENERALES **/
+
+
+/*Definimos la fuente del nav*/
+@font-face{
+	font-family: fontNav;
+	src: url(../fonts/Kalam-Regular.ttf);
+}
+
+/*Ajustes Generales*/
+html{
+	width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Ajustes Generales*/
+body{
+	background-image: url("../images/Intro/HomeBG.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/** BARRA DE NAVEGACION **/
+
+
+/*CSS seccion del navegador*/
+nav{
+	width: 100%;
+  height: 8%;
+  margin: 0%;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+/*Background con degradado*/
+  font-family: fontNav;
+  background-image: url("../images/Intro/HomeBG3.jpg");
+}
+
+/*Ajustes links*/
+#Menu a{
+	text-decoration: none;
+	color: white;
+	opacity: .6;
+  font-size: 25px;
+}
+
+	/*links on hover*/
+#Menu a:hover{
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+	font-size: 30px;
+	}
+
+/*CSS del ul dentro de la barra de navegacion*/
+#Menu{
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  width: 40%;
+
+	/*Quitamos los puntitos*/
+	list-style-type: none;
+	font-size: 30px;
+	color: white;
+	font-family: fontNav;
+}
+
+/*Sección general*/ 
+#contenedorGaleria{
+  z-index:0;
+  position:relative;
+  overflow: hidden;
+  width: 100%;
+  height: 900px;
+  display: block; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.Slideshow{
+  background-image: url("../images/Intro/HomeBG2.jpg");
+  position: relative;
+  margin-left: 20%;
+  margin-top:1.2%;
+  box-sizing: border-box;
+  width:60%;
+  height:95%;
+  padding: 22px;
+  font-family: fontNav;
+  border: 3px solid  #00ace6;
+  -webkit-box-shadow: 15px 0px 150px 3px rgba(0,172,230,0.65);
+  -moz-box-shadow: 15px 0px 150px 3px rgba(0,172,230,0.65);
+  box-shadow: 15px 0px 150px 3px rgba(0,172,230,0.65);
+  border-radius:1.5%;
+}
+
+video{
+  width: 100%;
+  height:95%;
+}
+
+
+
+/* Esconder las imagenes por defecto */
+.mySlides {
+  display: none;
+}
+
+/* Añadir un puntero al pasar por la etiqueta de las imagenes*/
+.cursor {
+  cursor: pointer;
+}
+
+/*Botones de previo y siguiente */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 17px;
+  margin-top: -50px;
+  margin-right:2%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:2%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+ background-image: url("../images/Intro/HomeBG2.jpg");
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/** FOOTER **/
+
+footer{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    overflow: hidden;
+    display: flex;
+
+    /*Background con degradado*/
+   
+    background-image: url("../images/Intro/HomeBG3.jpg");
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    opacity: .6;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-size: 60px;
+}
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    background-repeat:no-repeat;
+}
+
+#navlist li, #navlist a {
+    height: 25%;
+    width:800%;
+    display:inline;
+    margin-top: 30%;
+}
+
+#name{
+    font-family: fontNav;
+    left: 250%;
+    right:0%;
+    font-size: 25px;
+    top:5%;
+    display: flex;
+}
+
+#qualities{
+   font-family: fontNav;
+   left: 1100%;
+   right:0%;
+   font-size: 25px;
+   top:5%;
+   display: flex;
+}
+#home {
+    right: 0%;
+    left: 2230%;
+    font-size: 50px;
+    margin-top:0%;
+    color:white;
+}
+
+#prev {
+    right: 0%;
+    left: 2500%;
+    font-size: 50px;
+    margin-top:0%;
+    color:white;
+}
+
+#next {
+    left: 2750%;
+    right:0%;
+    font-size: 50px;
+    margin-top:0%;
+    color:white;
+}
+
+#copyright{
+   font-family: fontNav;
+   color:white;
+   left: 3800%;
+   right:0%;
+   font-size: 25px;
+   top:-30%;
+   display: flex;
+   
+}
+
+
+
