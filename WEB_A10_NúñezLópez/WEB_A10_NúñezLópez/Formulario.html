@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Portofolio - ¡Preguntame! </title>
+		<meta charset="utf-8"> 
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> 										<!-- Aqui permitimos el uso de acentos -->
+		<link rel="stylesheet" type="text/css" href="styles/Formulario.css">  <!-- Hoja de estilos utilizada -->
+	</head>
+	<body>
+    <header>
+	  </header>
+		<!-- Menu de navegacion -->
+		<nav>
+			<ul id="Menu">				
+				<li> <a href="Introduccion.html">¿Quien soy?</a> </li>
+				<li> <a href="Projectos.html">Mis Projectos</a> </li>				
+				<li> <a href="Social.html">Contacto</a> </li>
+				<li> <a href="Formulario.html">¡Pregúntame!</a> </li>
+			</ul>
+		</nav>
+      <main>
+        <!-- Formulario de Texto -->
+       <div id="contenedorFormulario">
+        <div id="Preguntame"><p id="pregunta">Preguntame lo que quieras</p></div>
+         <div class="formulario">
+          <form action="/action_page.php">
+           <div class="row">
+           <div class="col-25">
+             <label for="fname">Tu Nombre-></label>
+            </div>
+           <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Tu Nombre..">
+           </div>
+          </div>
+           <div class="row">
+           <div class="col-25">
+            <label for="lname">Tu Apellido-></label>
+           </div>
+           <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Tu Apellido..">
+           </div>
+          </div>
+           <div class="row">
+           <div class="col-25">
+            <label for="country">Pais-></label>
+           </div>
+           <div class="col-75">
+            <select id="country" name="country">
+             <option value="España">España</option>
+             <option value="Portugal">Portugal</option>
+             <option value="Francia">Francia</option>
+             <option value="Italia">Italia</option>
+             <option value="Inglaterra">Inglaterra</option>
+             <option value="Irlanda">Irlanda</option>
+             <option value="Belgica">Belgica</option>
+             <option value="Otro">Otro</option>
+            </select>
+           </div>
+          </div>
+            <div class="row">
+            <div class="col-25">
+             <label for="subject">Escribeme Aqui-></label>
+            </div>
+            <div class="col-75">
+             <textarea id="subject" name="subject" placeholder="Escribe aqui.." style="height:200px"></textarea>
+            </div>
+           </div>
+            <div class="row">
+             <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+	     </div>
+	  </main>
+      <footer>
+		<!-- **barra social** -->
+	  <ul id="navlist">
+         <li id="name">Luis Antonio Núñez López</li>
+         <li id="qualities">3DRenderer/Modeler/Animator</li>
+         <li id="home" ><a href="https://twitter.com/RealNtsgamer"><i class="fab fa-twitter-square"></i></a></li>
+         <li id="prev" ><a href="https://www.facebook.com/luiselspanish"><i class="fab fa-facebook"></i></a></li>
+         <li id="next" ><a href="https://www.linkedin.com/in/luis-antonio-nunez-lopez/"><i class="fab fa-linkedin"></i></a></li>
+         <li id="copyright"><p>© 2018 All rights reserved.</p></li>
+    </ul>
+	  </footer>
+	</body>
+</html>
